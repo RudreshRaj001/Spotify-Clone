@@ -39,7 +39,7 @@ songs.forEach((songs,i) => {
             <div class="songItem">
             <img src="${songs.coverPath}" alt="1">
             <span class="songName">${songs.songName}</span>
-              <span class="songlistplay"><span class="timeStamp">05:34 <i id="${i}" class="far songItemPlay fa-play-circle"></i></span></span>
+              <span class="songlistplay"><span class="timeStamp">05:34 </span><i id="${i}" class="far fa-2x songItemPlay fa-play-circle"></i></span>
             </div>
 `
 });
@@ -69,12 +69,13 @@ masterPlay.addEventListener("click", ()=>{
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
     audioElement.play();
-    playGif.style.opacity = 1;
+    AddGIF();
   } else if (audioElement.play()){
     masterPlay.classList.remove('fa-pause-circle');
     masterPlay.classList.add('fa-play-circle');
     audioElement.pause();
-    playGif.style.opacity = 0;
+    makeAllPlays();
+    RemoveGIF();
   }
 });
 
@@ -102,10 +103,11 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     makeAllPlays();
     songIndex = parseInt(e.target.id); // we extracted the ID from the element through pointer event which represented the index of different songs in the object
 
-    e.target.classList.remove('fa-play-circle');
-    e.target.classList.add('fa-pause-circle');
-    songChange(songIndex);
-    playGif.style.opacity = 1;
+      e.target.classList.remove('fa-play-circle');
+      e.target.classList.add('fa-pause-circle');
+      songChange(songIndex);
+      AddGIF();
+    
 
   })
 })
@@ -119,7 +121,7 @@ document.getElementById('previous').addEventListener('click',()=>{
     songIndex -= 1;
   }
     songChange(songIndex);
-    playGif.style.opacity = 1;
+    AddGIF();
 })
 
 // Next button 
@@ -130,7 +132,7 @@ document.getElementById('next').addEventListener('click',()=>{
     songIndex += 1;
   }
     songChange(songIndex);
-    playGif.style.opacity = 1;
+    AddGIF();
 })
 
 
@@ -160,3 +162,13 @@ const makeAllPlays = ()=>{
       element.classList.add('fa-play-circle');
   })
 };
+
+
+//PLAY GIF
+const AddGIF = ()=>{
+  playGif.style.opacity = 1;
+}
+//PAUSE GIF
+const RemoveGIF = ()=>{
+  playGif.style.opacity = 0;
+}

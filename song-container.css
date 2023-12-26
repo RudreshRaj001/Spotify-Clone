@@ -5,13 +5,14 @@
   font-family: 'Varela Round', sans-serif;
   display: flex;
   margin: 23px auto;
-  width: 70%;
+  width: 70vw;
   border-radius: 12px;
   padding: 34px;
   /* background-image: url('bg.jpg');
   background-size: cover; */  /* By Harry */
 
   display: flex;
+  justify-content: center;
   justify-content: space-between;
 }
 
@@ -42,6 +43,10 @@
   width: 520px;
   box-shadow: 0px 0px 50px 3px rgba(234, 221, 202, 0.468);
 }
+.songItemPlay{
+  margin-right: 20px;
+
+}
 .timeStamp{
   margin: 0 20px;
 }
@@ -56,7 +61,9 @@
   align-items: center;
 }
 .songInfo img{
-  opacity: 0;
   transition: opacity 0.3s ease-in;
   margin-right: 4px;
+}
+#gif{
+  opacity: 0;
 }
