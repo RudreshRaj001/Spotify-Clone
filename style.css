@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+  background-image: url('pexels-elijah-o\'donnell-3473569.jpg');
+  background-size: cover;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  font-family: 'Ubuntu', 'sans-serif';
+}
+.nav-tabs{
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  height: 89px;
+}
+nav ul li{
+  margin: 0 12px;
+  padding: 14px;
+  border-radius: 5px;
+}
+.tabs{
+  transition: box-shadow 0.2s ease-in-out;
+}
+.tabs:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 50px 5px rgba(234, 221, 202, 0.468);
+}
+
+.nav-button{
+  cursor: pointer;
+  margin-right: 20px;
+  border: none;
+  padding: 10px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 25px;
+}
+.sign-up{
+  background-color: black;
+  color: gray;
+  transition: color 0.2s ease-in-out;
+}
+.sign-up:hover{
+  color: white;
+}
+
+
+.brand img{
+  width: 54px;
+  margin: 0 8px;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}

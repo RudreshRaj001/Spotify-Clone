@@ -1,0 +1,62 @@
+.container{
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  /* background-image: url('bg.jpg');
+  background-size: cover; */  /* By Harry */
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SONG CONTAINER */
+.songItemContainer{
+  margin-top: 74px;
+}
+/* SONG LIST ITEMS */
+.songItem{
+  height: 55px;
+  width: 500px;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 12px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 34px;
+  transition: all 0.3s ease-in;
+}
+.songItem img{
+  width: 43px;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+.songItem:hover{
+  height: 70px;
+  width: 520px;
+  box-shadow: 0px 0px 50px 3px rgba(234, 221, 202, 0.468);
+}
+.timeStamp{
+  margin: 0 20px;
+}
+.timeStamp i{
+  cursor: pointer;
+}
+.songInfo{
+  position: absolute;
+  left: 10vw;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  align-items: center;
+}
+.songInfo img{
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  margin-right: 4px;
+}

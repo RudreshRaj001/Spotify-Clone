@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="icon" href="download.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="song-container.css">
+  <link rel="stylesheet" href="playing-song-bar.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <div class="nav-tabs">
+        <li class="brand"><img src="download.png" alt="Spotify"> Mortify</li>
+        <li class="tabs">Home</li>
+        <li class="tabs">About</li>
+      </div>
+      <div>
+        <button class="sign-up nav-button">Sign up</button>
+        <button class="login nav-button">Log in</button>
+      </div>
+    </ul>
+  </nav>
+
+
+
+<!-- Song Container -->
+  <div class="container">
+    <div class="song-list">
+      <h1>Best Of NCS - No Copyright Songs</h1>
+
+      <div class="songItemContainer">
+        <!-- Here we have the song list -->
+      </div>
+
+    </div>
+    <div class="song-banner"></div>
+
+    <!-- Current song playing box -->
+    <div class="masterBox">
+      <img src="covers/1.jpg" alt="" id="masterBoxImg">
+      <span id="masterBoxName">Midnight Serenade</span>
+    </div>
+  </div>
+
+
+
+<!-- Song Currently playing container -->
+  <div class="bottom">
+    <div class="MasterPanelTimes">
+      <span class="MasterTime"> 05:34 </span> 
+      <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">  <!-- To make the song progress bar  -->
+    </div>
+    <div class="icons">
+      <!-- font awesome icons -->
+      <i class="fas fa-3x fa-step-backward" id="previous"></i>
+      <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+      <i class="fas fa-3x fa-step-forward" id="next"></i>
+    </div>
+    <div class="songInfo">
+      <img src="playing.gif" width="47px" alt="" id="gif">
+      <span id="masterSongName">Midnight Serenade</span>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/781bf294e1.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
