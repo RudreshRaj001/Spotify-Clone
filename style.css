@@ -12,6 +12,8 @@ body{
 
 nav{
   font-family: 'Ubuntu', 'sans-serif';
+  position: sticky; /* to stick the nav to top */
+  top: 0; /* to stick the nav to top */
 }
 .nav-tabs{
   display: flex;
